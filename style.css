@@ -1,28 +1,38 @@
-body {
-    background-color: lightgrey;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 #container {
     display: flex;
     justify-content: space-around;
 }
 
-button {
-    font-size: 2rem;
-    border-radius: 15px;
-}
-
 .sideNote {
+    padding: 1em;
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
-    width: 250px;
-    background-color: grey;
-    border: 3px rgb(78, 78, 78) solid;
+    width: 33vw;
+    background-color: #49432A;
+    border: 2px #312700 solid;
 }
 
 .isHidden {
     display: none;
 }
+
+#noteArea ,
+#noteTitle {
+    font-family: 'Indie Flower', cursive;
+    background-color: #ffE072;
+    margin: 1em;
+    color: black;
+    border-radius: 15px;
+    padding: 0.5em;   
+}
+
+/* #noteTitle {
+    background-color: #ffE072;
+    margin: 1em;
+    color: black;
+    border-radius: 25px;
+} */

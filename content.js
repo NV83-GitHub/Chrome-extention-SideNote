@@ -4,7 +4,10 @@ createBrowserNote()
 
 function createBrowserNote(){
     browserNote.classList.add("isHidden", "sideNote")
-    browserNote.innerText = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum ipsum officiis commodi. Ad tempore dolorum nulla? Voluptatem, aut! Ullam debitis natus quo ipsa fugit hic beatae culpa quisquam et nihil"
+    browserNote.innerHTML = `<form>
+                                <input type="text" id="noteTitle" name="Title"><br>
+                                
+                                <textarea id="noteArea" name="Note" rows="4" cols="50">`
     document.body.append(browserNote)
 }
 
