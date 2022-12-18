@@ -11,9 +11,15 @@
     top: 0;
     right: 0;
     bottom: 0;
-    width: 33vw;
-    background-color: #49432A;
+    min-width: 33vw;
+    background-color: #FFC700;
     border: 2px #312700 solid;
+    z-index: 10000;
+}
+
+.resizable {
+    resize: both;
+    overflow: auto;
 }
 
 .isHidden {
@@ -27,12 +33,13 @@
     margin: 1em;
     color: black;
     border-radius: 15px;
-    padding: 0.5em;   
+    padding: 0.5em; 
+    width: 90%;  
+    outline: none;
+    outline-color: #FFC700;
 }
 
-/* #noteTitle {
-    background-color: #ffE072;
-    margin: 1em;
-    color: black;
-    border-radius: 25px;
-} */
+#noteArea {
+    height: 80vh;
+    resize: none;
+}

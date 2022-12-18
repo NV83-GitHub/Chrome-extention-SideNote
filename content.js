@@ -3,11 +3,11 @@ const browserNote = document.createElement("div")
 createBrowserNote()
 
 function createBrowserNote(){
-    browserNote.classList.add("isHidden", "sideNote")
+    browserNote.classList.add("isHidden", "sideNote", "resizable")
     browserNote.innerHTML = `<form>
-                                <input type="text" id="noteTitle" name="Title"><br>
+                                <input type="text" id="noteTitle" name="Title" placeholder="Title"><br>
                                 
-                                <textarea id="noteArea" name="Note" rows="4" cols="50">`
+                                <textarea id="noteArea" name="Note" placeholder="Note something here">`
     document.body.append(browserNote)
 }
 
