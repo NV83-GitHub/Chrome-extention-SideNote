@@ -31,5 +31,5 @@
           "css": ["style.css"]
         }
       ],
-    "permissions" : ["activeTab", "scripting"]
+    "permissions" : ["activeTab", "scripting", "storage"]
 }
